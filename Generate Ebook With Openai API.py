@@ -6,13 +6,8 @@ import re
 from docx import Document
 
 # Set up OpenAI API key
-# Read API key from file
-with open(r"C:\Users\Sanjeev-Safety\Documents\openai.api_key.txt", "r") as f:
-    api_key = f.read().strip()
-
 openai.api_key = api_key
-#openai.organization = "org-HpMm7EuoPLOFjPD8MDewEiUu"
-#openai.Model.list()
+
 
 model = "text-davinci-003"
 tokens = 4000
